@@ -2185,6 +2185,45 @@ button,
     #banner .image {
       max-height: 35vh; } }
 
+/* Recipe */
+#recipe {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  padding: 6em 0 1em 0;
+  position: relative; }
+  #recipe > * {
+    -moz-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-bottom: 0; }
+  #recipe .logo {
+    border-bottom: 0;
+    color: inherit;
+    font-family: "Roboto Slab", serif;
+    font-size: 1.125em; }
+  #recipe .icons {
+    text-align: right; }
+  #recipe .content {
+    margin-right: 1em; }
+  @media screen and (max-width: 1680px) {
+    #recipe {
+      padding-top: 5em; } }
+  @media screen and (max-width: 736px) {
+    #recipe {
+      padding-top: 6.5em; }
+      #recipe .logo {
+        font-size: 1.25em;
+        margin: 0; }
+      #recipe .icons {
+        height: 5em;
+        line-height: 5em;
+        position: absolute;
+        right: -0.5em;
+        top: 0; } }
+
 /* Footer */
 #footer .copyright {
   color: #9fa3a6;
