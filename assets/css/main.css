@@ -2121,7 +2121,7 @@ button,
     flex-shrink: 0;
     display: block;
     margin: 0 0 0 0;
-    width: 99%; }
+    width: 100%; }
     #topic_intro .image img {
       height: 100%;
       -moz-object-fit: cover;
