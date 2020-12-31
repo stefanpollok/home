@@ -2144,10 +2144,10 @@ button,
       -webkit-object-fit: cover;
       -ms-object-fit: cover;
       object-fit: cover;
-      -moz-object-position: center;
-      -webkit-object-position: center;
-      -ms-object-position: center;
-      object-position: center;
+      -moz-object-position: top;
+      -webkit-object-position: top;
+      -ms-object-position: top;
+      object-position: top;
       width: 100%; }
   @media screen and (orientation: portrait) {
     #banner {
@@ -2191,38 +2191,72 @@ button,
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  padding: 6em 0 1em 0;
-  position: relative; }
-  #recipe > * {
-    -moz-flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    margin-bottom: 0; }
-  #recipe .logo {
-    border-bottom: 0;
-    color: inherit;
-    font-family: "Roboto Slab", serif;
-    font-size: 1.125em; }
-  #recipe .icons {
-    text-align: right; }
+  padding: 1em 0 1em 0; }
   #recipe .content {
-    margin-right: 1em; }
-  @media screen and (max-width: 1680px) {
+    -moz-flex-grow: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -moz-flex-shrink: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    margin-right: 1em;
+    width: 50%; }
+  #recipe .image {
+    -moz-flex-grow: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-grow: 0;
+    flex-grow: 0;
+    -moz-flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-shrink: 0;
+    flex-shrink: 0;
+    display: block;
+    margin: 0 0 0 0;
+    width: 50%; }
+    #recipe .image img {
+      -moz-object-fit: cover;
+      -webkit-object-fit: cover;
+      -ms-object-fit: cover;
+      object-fit: cover;
+      -moz-object-position: left top;
+      -webkit-object-position: left top;
+      -ms-object-position: left top;
+      object-position: left top;
+      width: 100%; }
+  @media screen and (orientation: portrait) {
     #recipe {
-      padding-top: 5em; } }
-  @media screen and (max-width: 736px) {
-    #recipe {
-      padding-top: 6.5em; }
-      #recipe .logo {
-        font-size: 1.25em;
-        margin: 0; }
-      #recipe .icons {
-        height: 5em;
-        line-height: 5em;
-        position: absolute;
-        right: -0.5em;
-        top: 0; } }
+      -moz-flex-direction: column;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      padding-top: 1em; }
+      #recipe .content {
+        -moz-flex-grow: 0;
+        -webkit-flex-grow: 0;
+        -ms-flex-grow: 0;
+        flex-grow: 0;
+        -moz-flex-shrink: 0;
+        -webkit-flex-shrink: 0;
+        -ms-flex-shrink: 0;
+        flex-shrink: 0;
+        padding: 2em 0 0 0;
+        width: 100%; }
+      #recipe .image {
+        -moz-flex-grow: 0;
+        -webkit-flex-grow: 0;
+        -ms-flex-grow: 0;
+        flex-grow: 0;
+        -moz-flex-shrink: 0;
+        -webkit-flex-shrink: 0;
+        -ms-flex-shrink: 0;
+        flex-shrink: 0;
+        margin: 0 0 0 0;
+        height: 60em;
+        max-height: 70vh;
+        min-height: 12em;
+        width: 100%; } }
 
 /* Footer */
 #footer .copyright {
