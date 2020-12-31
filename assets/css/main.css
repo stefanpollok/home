@@ -2107,6 +2107,10 @@ button,
         right: -0.5em;
         top: 0; } }
 
+/* Fullscreen image */
+#fullscreen {
+  width: 100%; }
+
 /* Banner */
 #banner {
   padding: 6em 0 4em 0 ;
