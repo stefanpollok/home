@@ -2111,6 +2111,7 @@ button,
 #topic_intro {
   padding: 0 0 0 0 ; }
   #topic_intro .image {
+    display: block;
     width: 100%; }
 
 /* Banner */
